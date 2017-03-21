@@ -202,7 +202,9 @@
             <dependency>
                 <groupId>net.i2p.crypto</groupId>
                 <artifactId>eddsa</artifactId>
-                <version>0.1.1</version>
+                <version>0.2.0-SNAPSHOT</version>
+                <scope>system</scope>
+                <systemPath>${projectRoot}${file.separator}src${file.separator}eddsa-0.2.0-SNAPSHOT.jar</systemPath>
             </dependency>
 
             <dependency>

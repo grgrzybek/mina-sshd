@@ -96,8 +96,8 @@ public final class SecurityUtils {
     public static final String EDDSA = "EdDSA";
 
     // A copy-paste from the original, but we don't want to drag the classes into the classpath
-    // See EdDSANamedCurveTable.CURVE_ED25519_SHA512
-    public static final String CURVE_ED25519_SHA512 = "SHA512withEd25519";
+    // See EdDSAEngine.SIGNATURE_ALGORITHM
+    public static final String CURVE_ED25519_SHA512 = "NONEwithEdDSA";
 
     /**
      * System property used to configure the value for the maximum supported Diffie-Hellman

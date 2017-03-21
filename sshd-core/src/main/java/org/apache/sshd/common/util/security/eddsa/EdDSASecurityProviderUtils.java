@@ -28,6 +28,7 @@ import java.security.PublicKey;
 import java.util.Arrays;
 import java.util.Objects;
 
+import net.i2p.crypto.eddsa.EdDSAEngine;
 import net.i2p.crypto.eddsa.EdDSAKey;
 import net.i2p.crypto.eddsa.EdDSAPrivateKey;
 import net.i2p.crypto.eddsa.EdDSAPublicKey;
@@ -85,7 +86,7 @@ public final class EdDSASecurityProviderUtils {
     }
 
     public static boolean isEDDSASignatureAlgorithm(String algorithm) {
-        return EdDSANamedCurveTable.CURVE_ED25519_SHA512.equalsIgnoreCase(algorithm);
+        return EdDSAEngine.SIGNATURE_ALGORITHM.equalsIgnoreCase(algorithm);
     }
 
     public static EdDSAPublicKey recoverEDDSAPublicKey(PrivateKey key) throws GeneralSecurityException {
